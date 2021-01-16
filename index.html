@@ -13,13 +13,37 @@
     <body>
         <div class="container">
             <header class="header">
-                <img src="img/palm-logo.png" alt="jetree logo" class="logo">
+                <img src="img/Jetree.png" alt="jetree logo" class="logo">
 
-                <form action="">
+                <form class="search" action="">
                     <input type="text" class="search__input" placeholder="Search Hotels">
-                    <button class="search__button"></button>
+                    <button class="search__button">
+                      <svg class="search__icon">
+                          <use xlink:href="img/symbol-defs.svg#icon-search"></use>
+                      </svg>  
+                    </button>
                 </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/symbol-defs.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/symbol-defs.svg#icon-bubbles2"></use>
+                        </svg>
+                        <span class="user-nav__notification">11</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img class="user-nav__user-photo" src="img/user.jpeg" alt="user">
+                        <span class="user-nav__user-name">Abel</span>
+                    </div>
+                </nav>
             </header>
+
             <div class="content">
                 <nav class="sidebar">
                     sidebar
