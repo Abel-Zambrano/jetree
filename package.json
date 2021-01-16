@@ -18,7 +18,8 @@
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
     "gulp": "^4.0.2",
-    "node-sass": "^4.5.3",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
   }
