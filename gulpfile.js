@@ -1,6 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var uglifycss = require('gulp-uglifycss');
+const gulp, { watch } = require('gulp');
+const sass = require('gulp-sass');
+const uglifycss = require('gulp-uglifycss');
+
  
 sass.compiler = require('node-sass');
  
