@@ -1,4 +1,4 @@
-const gulp, { watch } = require('gulp');
+const gulp = require('gulp');
 const sass = require('gulp-sass');
 const uglifycss = require('gulp-uglifycss');
 
@@ -22,9 +22,9 @@ gulp.task('css', async function () {
 
 gulp.task('run', gulp.parallel('sass', 'css'));
 
-// gulp.task('watch', function() {
-//     gulp.series('./sass/*.scss', ('sass')); // watch for any .scss file change run 'sass'
-//     gulp.series('./css/*.css', ('css')); // watch for any .css file change run 'css'
-// })
+gulp.task('default', function(){
+    gulp.watch('./sass/*.scss', gulp.series('sass'));
+    gulp.watch('./css/*.css', gulp.series('css'));
 
-// gulp.task('default', gulp.parallel('run', 'watch'));
+    return
+});
