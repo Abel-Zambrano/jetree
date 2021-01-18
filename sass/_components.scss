@@ -1,6 +1,7 @@
 .logo {
     height: 14rem;
 }
+// Search ******************************************************************************
 
 .search {
     flex: 0 0 40%;
@@ -110,4 +111,31 @@
         border-radius: 100%;
         margin-right: 1rem;
     }
+}
+
+// Side Navigation ******************************************************************************
+
+.side-nav {
+
+    &__item {
+
+    }
+
+    &__link {
+
+    }
+
+    &__icon {
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+}
+
+// Legal ******************************************************************************
+
+.legal {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-grey-light-3);
+    padding: 2.5rem;
 }
