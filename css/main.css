@@ -16,6 +16,7 @@ COLORS
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --color-red: #ff0000;
+  --color-yellow: #ffd11a;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0, 0.3); }
 
 * {
@@ -165,6 +166,27 @@ body {
   color: var(--color-grey-light-3);
   padding: 2.5rem; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+
+.overview {
+  display: flex; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-star {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-yellow); }
+  .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-grey-light-1); }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -192,6 +214,5 @@ body {
   justify-content: space-between; }
 
 .hotel-view {
-  background-color: orangered;
   height: 80rem;
   flex: 1; }
