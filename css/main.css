@@ -262,12 +262,14 @@ body {
   flex-wrap: wrap; }
   .list__item {
     flex: 0 0 50%;
-    margin-bottom: .7rem; }
-  .list__item::before {
-    content: "";
-    display: inline-block;
-    width: 2rem;
-    height: 2rem; }
+    margin-bottom: .7rem;
+    display: flex;
+    align-items: center; }
+  .list__icon-right-arrow {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: .5rem;
+    fill: var(--color-primary-light); }
 
 .container {
   max-width: 120rem;
