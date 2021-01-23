@@ -15,13 +15,22 @@
 
 .header {
     font-size: 1.4rem;
-    height: 7rem;
     background-color: #fff;
     border-bottom: var(--line);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+}
+
+.logo {
+    height: 8.5rem;
+    width: 8.5rem;
 }
 
 .content {
@@ -57,7 +66,11 @@
     @media only screen and (max-width: $bp-medium) {
         padding: 3rem;
     }
-}   
+    
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    } 
+}
 
 .description {
     background-color: #fff;
@@ -70,6 +83,12 @@
         padding: 2rem;
         margin-right: 3rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 3rem;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    } 
 }
 
 .user-reviews {
